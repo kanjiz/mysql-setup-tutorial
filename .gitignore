@@ -1,0 +1,17 @@
+# JetBrains IDE specific setting files
+# JetBrains IDE 固有の設定ファイル
+# Reason: Contains user-specific settings, not relevant for version control
+# 理由: ユーザー固有の設定を含み、バージョン管理には適さないため
+.idea
+
+# Visual Studio Code specific setting files
+# Visual Studio Code 固有の設定ファイル
+# Reason: Contains user-specific settings, not relevant for version control
+# 理由: ユーザー固有の設定を含み、バージョン管理には適さないため
+.vscode
+
+# macOS specific files
+# macOS 固有のファイル
+# Reason: System-generated file containing folder attributes, not relevant for the project
+# 理由: フォルダの属性を含むシステム生成ファイルで、プロジェクトには関連しないため
+.DS_Store
