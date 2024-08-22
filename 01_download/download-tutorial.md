@@ -12,7 +12,6 @@ paginate: true
 
 - 検索エンジンで「MySQL」を検索し、公式サイトを開く
 
-
 ![bg right:40% 80%](../assets/images/placeholders/mysql-official-site.svg)
 
 ---
@@ -29,7 +28,7 @@ paginate: true
 
 ## 3. LTSバージョンの選択
 
-- 「Select Version」から「8.4.1 LTS」を選択
+- 「Select Version」から「8.4.2 LTS」を選択
   
 注：バージョン番号は変更される可能性があります。LTSと表示されているものを選んでください。
 
