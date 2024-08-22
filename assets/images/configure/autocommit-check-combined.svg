@@ -1,0 +1,26 @@
+<svg width="400" height="330" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .code { font: 14px monospace; fill: #333; }
+    .label { font: bold 16px sans-serif; }
+  </style>
+
+  <!-- Success Case -->
+  <text x="10" y="20" class="label">Success:</text>
+  <rect x="0" y="30" width="390" height="130" fill="#e6f3e6" rx="5" />
+  <text x="10" y="50" class="code" xml:space="preserve">mysql&gt; SELECT @@autocommit;</text>
+  <text x="10" y="70" class="code" xml:space="preserve">+--------------+</text>
+  <text x="10" y="90" class="code" xml:space="preserve">| @@autocommit |</text>
+  <text x="10" y="110" class="code" xml:space="preserve">+--------------+</text>
+  <text x="10" y="130" class="code" xml:space="preserve">|            0 |</text>
+  <text x="10" y="150" class="code" xml:space="preserve">+--------------+</text>
+
+  <!-- Fail Case -->
+  <text x="10" y="190" class="label">Fail:</text>
+  <rect x="0" y="200" width="390" height="130" fill="#f3e6e6" rx="5" />
+  <text x="10" y="220" class="code" xml:space="preserve">mysql&gt; SELECT @@autocommit;</text>
+  <text x="10" y="240" class="code" xml:space="preserve">+--------------+</text>
+  <text x="10" y="260" class="code" xml:space="preserve">| @@autocommit |</text>
+  <text x="10" y="280" class="code" xml:space="preserve">+--------------+</text>
+  <text x="10" y="300" class="code" xml:space="preserve">|            1 |</text>
+  <text x="10" y="320" class="code" xml:space="preserve">+--------------+</text>
+</svg>
