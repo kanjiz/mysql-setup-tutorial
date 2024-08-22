@@ -106,30 +106,9 @@ MySQL 8.4 Command Line Client - Unicode で`SELECT @@autocommit`を実行し、�
 
 ## 3.8 `||`を連結演算子として使えるようにする
 
-`SQL-MODE`に`PIPES_AS_CONCAT`を追加する。元の記述をコピーして、すぐ下にペーストする。元の記述はコメントアウトする。新たに作成したほうの先頭に`PIPES_AS_CONCAT,`を追加する。
+`SQL Mode`に`PIPES_AS_CONCAT`を追加する。元の記述をコピーして、すぐ下にペーストする。元の記述はコメントアウトする。新たに作成したほうの先頭に`PIPES_AS_CONCAT,`を追加する。
 
-before:
-
-```ini
-# database servers.
-sql-mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
-
-# General and Slow logging.
-```
-
----
-
-## 3.8 `||`を連結演算子として使えるようにする（続き）
-
-after:
-
-```ini
-# database servers.
-#sql-mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
-sql-mode="PIPES_AS_CONCAT,ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
-
-# General and Slow logging.
-```
+![bg right:55% w:90%](../assets/images/configure/sql-mode-truncated.svg)
 
 ---
 
