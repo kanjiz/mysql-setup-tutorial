@@ -88,7 +88,7 @@ paginate: true
 
 設定ファイルの`[mysqld]`セクションに`autocommit=0`を追加して、オートコミットを無効にします。
 
-![bg right:55% w:90%](../assets/images/configure/autocommit-disable-truncated.svg)
+![bg right:55% w:90%](../assets/images/configuration/autocommit-disable-truncated.svg)
 
 注: コメント行は省略されています。実際の設定ファイルでは完全な行が記述されています。
 
@@ -98,7 +98,7 @@ paginate: true
 
 MySQL 8.4 Command Line Client - Unicode で`SELECT @@autocommit`を実行し、以下の表示になれば成功です。
 
-![bg right:55% w:90%](../assets/images/configure/autocommit-check-combined.svg)
+![bg right:55% w:90%](../assets/images/configuration/autocommit-check-combined.svg)
 
 注: 下の例のように結果が `1` の場合、設定が正しく適用されていません。
 
@@ -108,7 +108,7 @@ MySQL 8.4 Command Line Client - Unicode で`SELECT @@autocommit`を実行し、�
 
 `SQL Mode`に`PIPES_AS_CONCAT`を追加する。元の記述をコピーして、すぐ下にペーストする。元の記述はコメントアウトする。新たに作成したほうの先頭に`PIPES_AS_CONCAT,`を追加する。
 
-![bg right:55% w:90%](../assets/images/configure/sql-mode-truncated.svg)
+![bg right:55% w:90%](../assets/images/configuration/sql-mode-truncated.svg)
 
 ---
 
@@ -116,7 +116,7 @@ MySQL 8.4 Command Line Client - Unicode で`SELECT @@autocommit`を実行し、�
 
 MySQL 8.4 Command Line Client - Unicode で`SELECT 'My' || 'SQL'`を実行し、以下の表示になれば成功です。
 
-![bg right:55% w:90%](../assets/images/configure/sql-mode-check-combined.svg)
+![bg right:55% w:90%](../assets/images/configuration/sql-mode-check-combined.svg)
 
 注: 下の例のように結果が `0` の場合、設定が正しく適用されていません。
 
